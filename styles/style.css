@@ -15,7 +15,7 @@
 }
 
 body {
-  background-image: url(../assets/img/Papelería.png);
+  background-image: url(../assets/img/background-papeleria.png);
   background-position: center;
   background-size: cover;
   display: grid;
@@ -83,7 +83,11 @@ label {
   background-color: rgba(255, 255, 255, 0.4);
 }
 
-.Nosotros {
+.bienvenidos {
+  text-align: center;
+}
+
+.nosotros {
   width: 100%;
   height: auto;
   text-align: center;
@@ -100,7 +104,7 @@ footer {
   justify-content: baseline;
 }
 
-.Redes {
+.redes {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
@@ -110,7 +114,7 @@ footer p {
   text-align: center;
 }
 
-.Consulta {
+.consulta {
   width: 80%;
   height: 700px;
   margin: 20px 20px 20px 20px;
@@ -189,33 +193,11 @@ p {
   padding: 10px;
 }
 
-@media (min-width: 1280px) {
-  .proximos-arribos,
-  .nuestros-productos,
-  .productos-artesanales {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-}
-
-@media (min-width: 1024px) {
-  .proximos-arribos,
-  .nuestros-productos,
-  .productos-artesanales {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: space-evenly;
-  }
-}
-
 @media (min-width: 768px) {
   .proximos-arribos,
   .nuestros-productos,
   .productos-artesanales {
-    display: flex;
     flex-direction: row;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
   }
 }
