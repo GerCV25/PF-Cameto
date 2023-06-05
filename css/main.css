@@ -177,6 +177,7 @@ button:hover {
 .nuestros-productos {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
 }
@@ -202,8 +203,25 @@ article p {
 
 .personalizacion {
   max-width: 1400px;
-  margin: 20px auto;
+  margin: 0 auto;
   padding: 20px;
+}
+.personalizacion h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+.personalizacion h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+.personalizacion p {
+  font-size: 16px;
+  margin-bottom: 20px;
 }
 
 @media (min-width: 768px) {
@@ -211,7 +229,7 @@ article p {
     display: flex;
     justify-content: center;
   }
-  .quienes-somos .text {
+  .quienes-somos .container .text {
     width: 50%;
     max-width: 600px;
     text-align: initial;
@@ -220,7 +238,7 @@ article p {
     flex-direction: column;
     justify-content: center;
   }
-  .quienes-somos .img-container {
+  .quienes-somos .container .img-container {
     background-image: url(../assets/img/portada.jpg);
     background-size: cover;
     background-position: center center;
@@ -243,7 +261,6 @@ article p {
   .nuestros-productos {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
   }
   .personalizacion {
     padding: 10px;
