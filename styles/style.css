@@ -15,9 +15,8 @@
 }
 
 body {
-  background-image: url(../assets/img/background-papeleria.png);
-  background-position: center;
-  background-size: cover;
+  background: linear-gradient(90deg, #E9CCCE, #fff);
+  color: #333;
   display: grid;
   min-height: 100vh;
   grid-template-rows: auto 1fr auto;
@@ -36,8 +35,16 @@ p {
 
 header {
   width: 100%;
-  background-color: #b6cfd1;
   padding: 10px 10px;
+}
+
+footer {
+  background-color: #E1D6D1;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
 }
 
 .navbar a {
@@ -48,7 +55,7 @@ header {
   color: #e48494;
 }
 
-.navbar .collapse .navbar-collapse {
+.navbar {
   flex-grow: inherit;
 }
 
@@ -61,19 +68,192 @@ header {
 }
 
 h1 {
-  font-size: 55px;
+  font-size: 3.5em;
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 2.7em;
 }
 
 h3 {
-  font-size: 30px;
+  font-size: 2em;
 }
 
 p {
-  font-size: 25px;
+  font-size: 1.25em;
+}
+
+button {
+  font-size: 1em;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 15px;
+  border: 1px solid rgba(0,0,0,0.5);
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+  background-color: #fbb1bd;
+}
+
+button:hover {
+  background-color: #f58698;
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 40vh;
+}
+
+#quienes-somos {
+
+}
+
+#quienes-somos .container {
+  text-align: center;
+  padding: 200px 12px;
+}
+
+#quienes-somos img {
+  padding: 10px;
+  margin: 15px;
+}
+
+#algunos-articulos {
+  text-align: center;
+  padding: 20px;
+}
+
+#algunos-articulos .container {
+  padding: 80px 5px;
+}
+
+#algunos-articulos h2 {
+  margin-top: 0;
+}
+
+#algunos-articulos h3 {
+  color: white;
+  margin-top: 0;
+}
+
+#algunos-articulos p {
+  color: white;
+}
+
+#algunos-articulos .card {
+  background-position: center;
+  background-size: cover;
+  height: auto;
+  padding: 40px;
+  margin: 20px;
+  border-radius: 15px;
+
+}
+
+.card:first-child {
+  background-image: linear-gradient(0deg,
+  rgba(0,0,0,0.5),
+  rgba(0,0,0,0.5)
+  )
+  ,url(../assets/img/box-dinosaurio.png);
+}
+
+.card:nth-child(2) {
+  background-image: linear-gradient(0deg,
+  rgba(0,0,0,0.5),
+  rgba(0,0,0,0.5)
+  )
+  ,url(../assets/img/box-sirena.png);
+}
+
+.card:last-child {
+  background-image: linear-gradient(0deg,
+  rgba(0,0,0,0.5),
+  rgba(0,0,0,0.5)
+  )
+  ,url(../assets/img/box-unicornio.png);
+}
+
+#catalogo h2 {
+  text-align: center;
+}
+
+.nuestros-productos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+article {
+  width: 300px;
+  background-color: #e48494;
+  border-radius: 20px;
+  margin: 20px 20px;
+}
+
+article img {
+  width: 100%;
+  height: 300px;
+  border-radius: 20px 20px 0 0;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card-body h3,
+p {
+  padding: 10px;
+}
+
+#personalizacion {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#personalizacion h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#personalizacion h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+#personalizacion p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+form {
+  max-width: 1400px;
+  padding: 40px;
+}
+
+form .enviar {
+  font-size: 1em;
+  font-weight: bold;
+  margin: 10px;
+  padding: 10px 30px;
+  border-radius: 15px;
+  border: 1px solid rgba(0,0,0,0.5);
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+  background-color: #fbb1bd;
 }
 
 label {
@@ -81,27 +261,6 @@ label {
   font-size: 20px;
   margin: 20px 20px 20px 20px;
   background-color: rgba(255, 255, 255, 0.4);
-}
-
-.bienvenidos {
-  text-align: center;
-}
-
-.nosotros {
-  width: 100%;
-  height: auto;
-  text-align: center;
-  margin-top: 200px;
-  background-color: rgba(255, 255, 255, 0.4);
-}
-
-footer {
-  background-color: #a8a2b8;
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: baseline;
 }
 
 .redes {
@@ -114,90 +273,70 @@ footer p {
   text-align: center;
 }
 
-.consulta {
-  width: 80%;
-  height: 700px;
-  margin: 20px 20px 20px 20px;
-  display: flex;
-  justify-content: center;
-}
+@media (min-width:768px) {
+  #quienes-somos .container {
+    display: flex;
+    justify-content: center;
+  }
 
-.enviar {
-  margin: 10px 20px 20px 20px;
-  font-size: medium;
-}
+  #quienes-somos .text {
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-.novedades h2 {
-  text-align: center;
-  margin-bottom: 100px;
-}
+  #quienes-somos .img-container {
+    background-image: url(../assets/img/portada.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 600px;
+  }
 
-.proximos-arribos {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
+  #algunos-articulos .articulos {
+    display: flex;
+    justify-content: center;
+  }
 
-.artesanal {
-  width: 100%;
-}
+  #algunos-articulos p {
+    margin-bottom: 30px;
+  }
 
-.artesanal h2 {
-  text-align: center;
-  margin-bottom: 100px;
-}
+  #algunos-articulos h3 {
+    margin-top: 0;
+  }
 
-.productos-artesanales {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
+  #algunos-articulos .card {
+    padding: 50px;
+  }
 
-.catalogo {
-  width: 100%;
-}
-
-.catalogo h2 {
-  text-align: center;
-  margin-bottom: 100px;
-}
-
-.nuestros-productos {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.card {
-  width: 300px;
-  background-color: #e48494;
-  border-radius: 20px;
-  margin: 20px 20px;
-}
-
-.card img {
-  width: 100%;
-  height: 300px;
-  border-radius: 20px 20px 0 0;
-}
-
-.card-body {
-  padding: 20px;
-}
-
-.card-body h3,
-p {
-  padding: 10px;
-}
-
-@media (min-width: 768px) {
-  .proximos-arribos,
-  .nuestros-productos,
-  .productos-artesanales {
+  .nuestros-productos {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
+  }
+  #personalizacion {
+    padding: 10px;
+  }
+  
+  #personalizacion h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  #personalizacion h2 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  #personalizacion p {
+    font-size: 14px;
+    margin-bottom: 10px;
   }
 }
