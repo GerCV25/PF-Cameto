@@ -1,0 +1,11 @@
+{
+  "name": "pre-entrega2-cameto",
+  "version": "1.0.0",
+  "description": "Pre-Entrega3-Cameto",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Germán Cameto",
+  "license": "ISC"
+}

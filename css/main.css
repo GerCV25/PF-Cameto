@@ -8,14 +8,74 @@
   font-family: DancingScript;
   src: url(../assets/font/DancingScript-Regular.ttf);
 }
-
 @font-face {
   font-family: Signika;
   src: url(../assets/font/Signika-Medium.ttf);
 }
+header {
+  width: 100%;
+  padding: 10px 10px;
+}
+header nav,
+header p {
+  font-family: Signika;
+}
+header .navbar {
+  flex-grow: inherit;
+}
+header .navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+header .navbar a {
+  color: #e48494;
+}
+header .navbar .collapse li a {
+  color: #e48494;
+}
+header .navbar .navbar-toggler {
+  border: 1px solid #e48494;
+}
+
+footer {
+  background-color: #e1d6d1;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+}
+footer .redes {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+footer p {
+  text-align: center;
+}
+
+form {
+  max-width: 1400px;
+  padding: 40px;
+}
+form label {
+  font-family: Signika;
+  font-size: 20px;
+  margin: 20px 20px 20px 20px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+form .enviar {
+  font-size: 1em;
+  font-weight: bold;
+  margin: 10px;
+  padding: 10px 30px;
+  border-radius: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  background-color: #fbb1bd;
+}
 
 body {
-  background: linear-gradient(90deg, #E9CCCE, #fff);
+  background: linear-gradient(90deg, #e9ccce, #fff);
   color: #333;
   display: grid;
   min-height: 100vh;
@@ -26,45 +86,6 @@ h1,
 h2,
 h3 {
   font-family: DancingScript, sans-serif;
-}
-
-nav,
-p {
-  font-family: Signika;
-}
-
-header {
-  width: 100%;
-  padding: 10px 10px;
-}
-
-footer {
-  background-color: #E1D6D1;
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: baseline;
-}
-
-.navbar a {
-  color: #e48494;
-}
-
-.navbar .collapse li a {
-  color: #e48494;
-}
-
-.navbar {
-  flex-grow: inherit;
-}
-
-.navbar .navbar-toggler:focus {
-  box-shadow: none;
-}
-
-.navbar .navbar-toggler {
-  border: 1px solid #e48494;
 }
 
 h1 {
@@ -88,21 +109,15 @@ button {
   font-weight: bold;
   padding: 10px 30px;
   border-radius: 15px;
-  border: 1px solid rgba(0,0,0,0.5);
-  box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
   background-color: #fbb1bd;
 }
-
 button:hover {
   background-color: #f58698;
 }
 
-.container {
-  max-width: 1400px;
-  margin: auto;
-}
-
-#hero {
+.hero {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -111,78 +126,58 @@ button:hover {
   height: 40vh;
 }
 
-#quienes-somos {
-
-}
-
-#quienes-somos .container {
+.quienes-somos .container {
   text-align: center;
   padding: 200px 12px;
 }
-
-#quienes-somos img {
+.quienes-somos .container img {
   padding: 10px;
   margin: 15px;
 }
 
-#algunos-articulos {
+.algunos-articulos {
   text-align: center;
   padding: 20px;
 }
-
-#algunos-articulos .container {
+.algunos-articulos .container {
   padding: 80px 5px;
 }
-
-#algunos-articulos h2 {
+.algunos-articulos h2 {
   margin-top: 0;
 }
-
-#algunos-articulos h3 {
+.algunos-articulos h3 {
   color: white;
   margin-top: 0;
 }
-
-#algunos-articulos p {
+.algunos-articulos p {
   color: white;
 }
-
-#algunos-articulos .card {
+.algunos-articulos .card {
   background-position: center;
   background-size: cover;
   height: auto;
   padding: 40px;
   margin: 20px;
   border-radius: 15px;
-
+}
+.algunos-articulos .card:first-child {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/box-dinosaurio.png);
+}
+.algunos-articulos .card:nth-child(2) {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/box-sirena.png);
+}
+.algunos-articulos .card:last-child {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/box-unicornio.png);
 }
 
-.card:first-child {
-  background-image: linear-gradient(0deg,
-  rgba(0,0,0,0.5),
-  rgba(0,0,0,0.5)
-  )
-  ,url(../assets/img/box-dinosaurio.png);
-}
-
-.card:nth-child(2) {
-  background-image: linear-gradient(0deg,
-  rgba(0,0,0,0.5),
-  rgba(0,0,0,0.5)
-  )
-  ,url(../assets/img/box-sirena.png);
-}
-
-.card:last-child {
-  background-image: linear-gradient(0deg,
-  rgba(0,0,0,0.5),
-  rgba(0,0,0,0.5)
-  )
-  ,url(../assets/img/box-unicornio.png);
-}
-
-#catalogo h2 {
+.catalogo h2 {
   text-align: center;
+}
+.catalogo h2 .nuestros-productos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .nuestros-productos {
@@ -198,88 +193,48 @@ article {
   border-radius: 20px;
   margin: 20px 20px;
 }
-
 article img {
   width: 100%;
   height: 300px;
   border-radius: 20px 20px 0 0;
 }
-
-.card-body {
+article .card-body {
+  padding: 10px;
+}
+article h3,
+article p {
   padding: 10px;
 }
 
-.card-body h3,
-p {
-  padding: 10px;
-}
-
-#personalizacion {
-  max-width: 960px;
+.personalizacion {
+  max-width: 1400px;
   margin: 0 auto;
   padding: 20px;
 }
-
-#personalizacion h1 {
+.personalizacion h1 {
   font-size: 32px;
   font-weight: bold;
   color: #333;
   margin-bottom: 20px;
 }
-
-#personalizacion h2 {
+.personalizacion h2 {
   font-size: 24px;
   font-weight: bold;
   color: #333;
   margin-top: 40px;
   margin-bottom: 10px;
 }
-
-#personalizacion p {
+.personalizacion p {
   font-size: 16px;
   margin-bottom: 20px;
 }
 
-form {
-  max-width: 1400px;
-  padding: 40px;
-}
-
-form .enviar {
-  font-size: 1em;
-  font-weight: bold;
-  margin: 10px;
-  padding: 10px 30px;
-  border-radius: 15px;
-  border: 1px solid rgba(0,0,0,0.5);
-  box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-  background-color: #fbb1bd;
-}
-
-label {
-  font-family: Signika;
-  font-size: 20px;
-  margin: 20px 20px 20px 20px;
-  background-color: rgba(255, 255, 255, 0.4);
-}
-
-.redes {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-}
-
-footer p {
-  text-align: center;
-}
-
-@media (min-width:768px) {
-  #quienes-somos .container {
+@media (min-width: 768px) {
+  .quienes-somos .container {
     display: flex;
     justify-content: center;
   }
-
-  #quienes-somos .text {
+  .quienes-somos .text {
     width: 50%;
     max-width: 600px;
     text-align: initial;
@@ -288,55 +243,47 @@ footer p {
     flex-direction: column;
     justify-content: center;
   }
-
-  #quienes-somos .img-container {
+  .quienes-somos .img-container {
     background-image: url(../assets/img/portada.jpg);
     background-size: cover;
     background-position: center center;
     height: 500px;
     width: 600px;
   }
-
-  #algunos-articulos .articulos {
+  .algunos-articulos .articulos {
     display: flex;
     justify-content: center;
   }
-
-  #algunos-articulos p {
-    margin-bottom: 30px;
-  }
-
-  #algunos-articulos h3 {
+  .algunos-articulos .articulos h3 {
     margin-top: 0;
   }
-
-  #algunos-articulos .card {
+  .algunos-articulos .articulos p {
+    margin-bottom: 30px;
+  }
+  .algunos-articulos .articulos .card {
     padding: 50px;
   }
-
   .nuestros-productos {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
   }
-  #personalizacion {
+  .personalizacion {
     padding: 10px;
   }
-  
-  #personalizacion h1 {
+  .personalizacion h1 {
     font-size: 24px;
     margin-bottom: 10px;
   }
-  
-  #personalizacion h2 {
+  .personalizacion h2 {
     font-size: 20px;
     margin-top: 20px;
     margin-bottom: 10px;
   }
-  
-  #personalizacion p {
+  .personalizacion p {
     font-size: 14px;
     margin-bottom: 10px;
   }
 }
+
+/*# sourceMappingURL=main.css.map */

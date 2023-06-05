@@ -1,0 +1,23 @@
+header {
+    width: 100%;
+    padding: 10px 10px;
+    nav,
+  p {
+    font-family: Signika;
+  }
+    .navbar {
+      flex-grow: inherit;
+    }
+    .navbar .navbar-toggler:focus {
+      box-shadow: none;
+    }
+    .navbar a {
+      color: #e48494;
+    }
+    .navbar .collapse li a {
+      color: #e48494;
+    }
+    .navbar .navbar-toggler {
+      border: 1px solid #e48494;
+    }
+  } 
