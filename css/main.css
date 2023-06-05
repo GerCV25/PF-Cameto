@@ -12,6 +12,28 @@
   font-family: Signika;
   src: url(../assets/font/Signika-Medium.ttf);
 }
+h1,
+h2,
+h3 {
+  font-family: DancingScript, sans-serif;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+
+h2 {
+  font-size: 2.7em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.25em;
+}
+
 header {
   width: 100%;
   padding: 10px 10px;
@@ -80,28 +102,6 @@ body {
   display: grid;
   min-height: 100vh;
   grid-template-rows: auto 1fr auto;
-}
-
-h1,
-h2,
-h3 {
-  font-family: DancingScript, sans-serif;
-}
-
-h1 {
-  font-size: 3.5em;
-}
-
-h2 {
-  font-size: 2.7em;
-}
-
-h3 {
-  font-size: 2em;
-}
-
-p {
-  font-size: 1.25em;
 }
 
 button {
@@ -173,12 +173,6 @@ button:hover {
 .catalogo h2 {
   text-align: center;
 }
-.catalogo h2 .nuestros-productos {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
 
 .nuestros-productos {
   display: flex;
@@ -208,25 +202,8 @@ article p {
 
 .personalizacion {
   max-width: 1400px;
-  margin: 0 auto;
+  margin: 20px auto;
   padding: 20px;
-}
-.personalizacion h1 {
-  font-size: 32px;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 20px;
-}
-.personalizacion h2 {
-  font-size: 24px;
-  font-weight: bold;
-  color: #333;
-  margin-top: 40px;
-  margin-bottom: 10px;
-}
-.personalizacion p {
-  font-size: 16px;
-  margin-bottom: 20px;
 }
 
 @media (min-width: 768px) {
