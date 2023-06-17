@@ -19,11 +19,14 @@ h3 {
 }
 
 h1 {
+  text-align: center;
   font-size: 3.5em;
+  padding: 20px;
 }
 
 h2 {
   font-size: 2.7em;
+  padding: 20px;
 }
 
 h3 {
@@ -31,10 +34,15 @@ h3 {
 }
 
 p {
+  font-family: Signika, sans-serif;
   font-size: 1.25em;
 }
 
 header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   padding: 10px 10px;
 }
@@ -76,8 +84,7 @@ footer p {
 }
 
 form {
-  max-width: 1400px;
-  padding: 40px;
+  width: 100%;
 }
 form label {
   font-family: Signika;
@@ -104,6 +111,11 @@ body {
   grid-template-rows: auto 1fr auto;
 }
 
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 button {
   font-size: 1em;
   font-weight: bold;
@@ -123,12 +135,20 @@ button:hover {
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  height: 40vh;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .quienes-somos .container {
   text-align: center;
-  padding: 200px 12px;
+  padding: 50px 12px;
+}
+.quienes-somos .container .img-container {
+  background-image: url(../assets/img/portada.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 500px;
+  width: 100%;
 }
 .quienes-somos .container img {
   padding: 10px;
@@ -170,6 +190,10 @@ button:hover {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/box-unicornio.png);
 }
 
+.alejandro {
+  text-align: right;
+}
+
 .catalogo h2 {
   text-align: center;
 }
@@ -184,6 +208,7 @@ button:hover {
 
 article {
   width: 300px;
+  height: 600px;
   background-color: #e48494;
   border-radius: 20px;
   margin: 20px 20px;
@@ -202,25 +227,20 @@ article p {
 }
 
 .personalizacion {
-  max-width: 1400px;
-  margin: 0 auto;
   padding: 20px;
 }
 .personalizacion h1 {
-  font-size: 32px;
   font-weight: bold;
   color: #333;
   margin-bottom: 20px;
 }
 .personalizacion h2 {
-  font-size: 24px;
   font-weight: bold;
   color: #333;
   margin-top: 40px;
   margin-bottom: 10px;
 }
 .personalizacion p {
-  font-size: 16px;
   margin-bottom: 20px;
 }
 
@@ -237,13 +257,6 @@ article p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-  .quienes-somos .container .img-container {
-    background-image: url(../assets/img/portada.jpg);
-    background-size: cover;
-    background-position: center center;
-    height: 500px;
-    width: 600px;
   }
   .algunos-articulos .articulos {
     display: flex;
@@ -278,6 +291,4 @@ article p {
     font-size: 14px;
     margin-bottom: 10px;
   }
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

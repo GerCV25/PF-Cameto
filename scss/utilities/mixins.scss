@@ -1,0 +1,4 @@
+@mixin main($param1, $param2) {
+  max-width: $param1;
+  margin: $param2;
+}
