@@ -146,14 +146,7 @@ article {
   }
 }
 
-.form-control {
-  width: auto;
-  height: auto;
-}
-
 .map {
-  width: auto;
-  height: auto;
   margin-top: 50px;
   margin-bottom: 50px;
   display: flex;
@@ -210,5 +203,9 @@ article {
       font-size: 14px;
       margin-bottom: 10px;
     }
+  }
+
+  .map {
+    width: 100%;
   }
 }
